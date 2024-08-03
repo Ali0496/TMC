@@ -1,6 +1,9 @@
+body{
+    background-color: yellow;
+}
 .container{
-    margin-top: 150px;
-    margin-left: 150px;
+    margin-top: 100px;
+    margin-left: 10ba0px;
     border: thin;
     padding: 15px;
     background-color: aqua;
@@ -10,9 +13,38 @@
     background-image: url(/TMC/Images/teachmecode.jpeg);
     width: 450px;
     height: 450px;
-    
+    background-repeat: repeat-x;
+    background-position:bottom;
 }
 .container a{
     text-decoration: none;
     color: white;
+}
+#grand1{
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(
+        to top,
+        rgb(210, 199, 197),
+        rgb(13, 218, 157)
+    );
+}
+
+#grand2{
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(25, 24, 24),
+        rgb(238, 13, 13)
+    );
+}
+#grand3{
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(
+        to top,
+        rgb(0, 0, 250),
+        rgb(250, 0,0)
+    );
 }
