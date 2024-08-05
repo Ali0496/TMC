@@ -30,6 +30,9 @@ nav {
     font-size: 18px;
     list-style: none;
   }
+  .main-image-container{
+    background-color: #03afed;
+  }
   a {
     text-decoration: none;
     z-index: 99;
