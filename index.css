@@ -30,8 +30,20 @@ nav {
     font-size: 18px;
     list-style: none;
   }
+  .main-container{
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    
+  }
+  .main-text-container{
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    width: 60%;
+  }
   .main-image-container{
-    background-color: #03afed;
+    background-color: #071e2e;
   }
   a {
     text-decoration: none;
@@ -40,4 +52,8 @@ nav {
   }
   .main{
     margin-top: 60px;
+  }
+  footer{
+    position: absolute;
+    bottom: 300px;
   }
