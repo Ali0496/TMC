@@ -35,3 +35,20 @@
     background-color: black;
     color: white;
 }
+.row2{
+    background-color: black;
+    color: green;
+}
+.first2{
+    border: 2px solid;
+    background-color: white;
+    color: red;
+}
+.p-2{
+    border: 3px solid red;
+    background-color: blue;
+    color: white;
+}
+.background{
+    background-color: rgb(211, 206, 206);
+}
