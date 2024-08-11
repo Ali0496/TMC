@@ -1,1 +1,32 @@
+:root {
+    --main-color: #071e2e;
+    --main-font-color: white;
+    --padding: 20px;
+    --normal-text-size: 16px;
+    --second-color: #03afed;
+}
 
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--main-font-color);
+    background-color: var(--main-color);
+ 
+}
+.page-container{
+    padding: 0 142px;
+ }
+ nav {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+    z-index: 1;
+    display: flex;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    list-style: none;
+  } 

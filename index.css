@@ -1,20 +1,22 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+
 :root {
     --main-color: #071e2e;
     --main-font-color: white;
     --padding: 20px;
     --normal-text-size: 16px;
     --second-color: #03afed;
-  }
-  
+}
+
 body{
     font-family: "Poppins",sans-serif;
     color: var(--main-font-color);
     background-color: var(--main-color);
+ 
 }
+.page-container{
+   padding: 0 142px;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -31,19 +33,19 @@ nav {
     list-style: none;
   }
   .main-container{
-    position: fixed;
     justify-content: space-between;
     display: flex;
     
   }
   .main-text-container{
     font-size: 20px;
-    word-spacing: 10px;
+    word-spacing: 1px;
     letter-spacing: 5px;
     width: 60%;
   }
   .main-image-container{
     background-color: #071e2e;
+    padding: 50px;
   }
   a {
     text-decoration: none;
@@ -52,8 +54,37 @@ nav {
   }
   .main{
     margin-top: 60px;
+    padding: 48px;
+    text-align: center;
   }
-  footer{
-    position: absolute;
-    bottom: 300px;
+  .btn1{
+    background-color: var(--second-color) ;
+    border-radius: 8px;
+
+    padding: 12px 48px;
+    color: white;
   }
+  .btn2{
+
+  }
+@media only screen and (max-width: 750px) {
+  .main-container{
+    flex-direction: column;
+  }
+  .main-image-container{
+    order: 1;
+  }
+  .main-text-container{
+    order: 2;
+  }
+  .main-text-container{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-container{
+    padding: 0 3%;
+  }
+}
