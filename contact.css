@@ -1,16 +1,14 @@
-body{
-    background-color: gray;
-    color: white;
+:root {
+    --main-color: #071e2e;
+    --main-font-color: white;
+    --padding: 20px;
+    --normal-text-size: 16px;
+    --second-color: #03afed;
 }
-p {
-    text-align: center;
-}
-.frm{
-    background-color: rgb(46, 45, 45);
-    text-align: center;
 
-}
-#sndmsg{
-    background-color: blue;
-    color: white;
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--main-font-color);
+    background-color: var(--main-color);
+ 
 }

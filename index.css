@@ -14,24 +14,23 @@ body{
  
 }
 .page-container{
-   padding: 0 142px;
+  padding: 0 142px;
+  border: 2px solid blue;
 }
-
 nav {
-    position: fixed;
-    top: 0;
-    justify-content: space-between;
-    width: 80%;
-    height: 60px;
-    z-index: 1;
-    display: flex;
-  }
-  ul {
-    display: flex;
-    gap: 20px;
-    font-size: 18px;
-    list-style: none;
-  }
+border: 2px solid red;
+  top: 0;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  list-style: none;
+} 
   .main-container{
     justify-content: space-between;
     display: flex;
