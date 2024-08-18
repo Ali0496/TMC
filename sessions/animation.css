@@ -1,0 +1,20 @@
+body{
+    background-color: blue;
+}
+.animation{ 
+    width: max-content;
+    animation: spin 3s linear infinite;
+
+}
+@keyframes spin {
+    from{
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+    
+}
+/* .animation:hover{
+    transform: translate(200px, 200px);
+} */
