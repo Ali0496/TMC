@@ -3,7 +3,8 @@ body{
 }
 .animation{ 
     width: max-content;
-    animation: spin 3s linear infinite;
+    animation: spin 5s linear infinite;
+    margin: 150px;
 
 }
 @keyframes spin {
