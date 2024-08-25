@@ -18,20 +18,31 @@ body{
   background-color: var(--main-color);
 
 }
+
 .page-container{
 padding: 0 142px;
-
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows:66px ;
+border: 2px solid red;
 }
 
 .header-container{
-top: 0;
-justify-content: space-between;
-height: 60px;
-z-index: 1;
-display: flex;
-padding: 30px 0;
+  border: 2px solid red;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+height: 64px;
 }
-
+ .main-image-container{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  background-color: #071e2e;
+border: 2px solid red;
+  
+}
 ul {
 display: flex;
 gap: 30px;
@@ -49,6 +60,7 @@ a {
 }
 
 nav a:hover{
+  display: flex ;
   padding: 5px;
   color: var(--second-color);
   border-bottom: 2px solid var(--second-color);
@@ -63,6 +75,8 @@ div .logo:hover{
   color: var(--second-color);
   border-bottom: 2px solid #03afed;
 }
+
+/*
 .main-container{
   justify-content: space-between;
   display: flex;
@@ -91,10 +105,7 @@ div .logo:hover{
   font-size: 18px;
   margin-bottom: 30px;
 }
-.main-image-container{
-  background-color: #071e2e;
-  padding: 50px;
-}
+
 
 .light-button{
   background-color: var(--second-color) ;
@@ -157,4 +168,4 @@ div .logo:hover{
 .page-container{
   padding: 0 3%;
 }
-}
+} */
