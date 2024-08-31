@@ -18,7 +18,45 @@ body{
   background-color: var(--main-color);
 
 }
+label{
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  display: block;
+  border-radius: 20px;
+  padding: 3px;
+  position: relative;
+  transition: all 2s linear;
 
+}
+label::after{
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background-color: orange;
+  border-radius: 20px;
+}
+#mode-theme:checked + label{
+  background-color: rgb(46, 45, 45);
+}
+#mode-theme:checked + label::after{
+  left: 70px;
+  background-color: rgb(130, 124, 134);
+}
+label img{
+  width: 25px;
+  z-index: 100;
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  left: 5px;
+
+}
+
+#moon{
+  left: 73px;
+}
 .page-container{
 padding: 0 142px;
 display: grid;
