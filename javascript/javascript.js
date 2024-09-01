@@ -1,9 +1,75 @@
 
-let btn = document.getElementById("btn");
-function showAlert (event){
-    console.log (event);
+// function avg (x,y,z){
+//     let avg =(x+y+z)/3
+//     if (avg >=50 && avg <60) {
+//     console.log("psssed")
+// }
+
+// if(avg >=50 && avg <60){
+//     console.log("failed")
+// }
+// return avg
+//    }
+
+class Animal {
+    constructor(value){
+        this.name = value;
+    }
+    eat () {
+        return `this ${this.name} is eating`;
+    }
 }
-btn.addEventListener("click", showAlert);
+class Dog extends Animal {
+    bark(){
+        return `this ${this.name} is barking`
+    }
+}
+let myDog = new Dog("Bobby");
+console.log(myDog.bark())
+
+
+
+
+
+
+
+
+// console.log(avg(50,50,50))
+
+
+// function isEven  (x){
+//     let remain = x % 3;
+//     if (remain == 0){
+//         return "it is Even"
+//     }
+//     else{
+//         return "it is Odd"
+//     }
+// }
+// console.log(isEven(99))
+// function result(x, y, z, u){
+//     let sum = x + y + z + u;
+//     let avg = sum / 4;
+
+//     if(avg > 50){
+//         return "Student is passed"
+//     }
+//     else{
+//        "Student is passed" 
+
+//     }
+       
+     
+// }
+
+
+
+
+// let btn = document.getElementById("btn");
+// function showAlert (event){
+//     console.log (event);
+// }
+// btn.addEventListener("click", showAlert);
 
 
 
@@ -54,31 +120,6 @@ btn.addEventListener("click", showAlert);
 
 
 
-
-// function isEven  (x){
-//     let remain = x % 3;
-//     if (remain == 0){
-//         return "it is Even"
-//     }
-//     else{
-//         return "it is Odd"
-//     }
-// }
-// console.log(isEven(99))
-// function result(x, y, z, u){
-//     let sum = x + y + z + u;
-//     let avg = sum / 4;
-
-//     if(avg > 50){
-//         return "Student is passed"
-//     }
-//     else{
-//        "Student is passed" 
-
-//     }
-       
-     
-// }
 // console.log(result(45, 55, 62, 76));
 // let ul = document.createElement("ul")
 // let li = document.createElement("li")
