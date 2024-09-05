@@ -1,0 +1,54 @@
+.css-media-query{
+    color: black;
+    font-size: 20px;
+}
+.css-media-query{
+    @media screen and (min-width: 1024px) {
+        background-color: gray;
+        color: red;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+}
+.css-media-query{
+    @media screen and 
+        (min-width: 768px) and
+        (max-width: 1023px) {
+         background-color: red;
+         color: white;
+         font-size: 16px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+}
+.css-media-query{
+    @media  screen and (max-width:767px){
+        background-color: yellow;
+        color: blue;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+}
+.row{
+    background-color: black;
+    color: white;
+}
+.row2{
+    background-color: black;
+    color: green;
+}
+.first2{
+    border: 2px solid;
+    background-color: white;
+    color: red;
+}
+.p-2{
+    border: 3px solid red;
+    background-color: blue;
+    color: white;
+}
+.background{
+    background-color: rgb(211, 206, 206);
+}
