@@ -11,24 +11,46 @@
 // return avg
 //    }
 
-class Animal {
-    constructor(value){
-        this.name = value;
-    }
-    eat () {
-        return `this ${this.name} is eating`;
-    }
+// class Animal {
+//     constructor(value){
+//         this.name = value;
+//     }
+//     eat () {
+//         return `this ${this.name} is eating`;
+//     }
+// }
+// class Dog extends Animal {
+//     bark(){
+//         return `this ${this.name} is barking`
+//     }
+// }
+// let myDog = new Dog("Bobby");
+// console.log(myDog.bark())
+// let tasks = []
+
+let addBtn = document.getElementById("add");
+addBtn.addEventListener("click", () => {
+    let text = document.getElementById("input").value;
+    let randomNum = Math.random(8);
+console.log(randomNum);
+
+tasks.push({id: randomNum, name: text });
+showElement();
+});
+let list = document.getElementById("list");
+
+function showElement(){
+    list.innerHTML = "";
+    tasks.forEach((user) => {
+        let li = document.createElement("li");
+        li.textContent = user.name;
+        list.appendChild(li);
+    })
 }
-class Dog extends Animal {
-    bark(){
-        return `this ${this.name} is barking`
-    }
-}
-let myDog = new Dog("Bobby");
-console.log(myDog.bark())
 
 
 
+console.log(tasks, "todo list array");
 
 
 
@@ -129,3 +151,6 @@ console.log(myDog.bark())
 // ul.appendChild(li);
 // ul.appendChild(li2);
 // document.body.appendChild(ul);
+
+
+
