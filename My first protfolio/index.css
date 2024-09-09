@@ -1,6 +1,5 @@
 *{
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
 }
 :root {
   --main-color: #071e2e;
@@ -20,16 +19,32 @@ body{
 }
 .page-container{
 padding: 0 142px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr, 1fr 1fr;
 
 }
 
 .header-container{
-top: 0;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
 justify-content: space-between;
-height: 60px;
-z-index: 1;
 display: flex;
-padding: 30px 0;
+
+
+}
+
+.main-image-container{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #071e2e;
+  width: 546px;
+  height: 743px;
+
 }
 
 ul {
@@ -66,7 +81,6 @@ div .logo:hover{
 .main-container{
   justify-content: space-between;
   display: flex;
-  border: 2px solid ;
   height: 600px;
 
 }
@@ -91,10 +105,7 @@ div .logo:hover{
   font-size: 18px;
   margin-bottom: 30px;
 }
-.main-image-container{
-  background-color: #071e2e;
-  padding: 50px;
-}
+
 
 .light-button{
   background-color: var(--second-color) ;
@@ -113,7 +124,9 @@ div .logo:hover{
   border: 2px solid #03afed;
   border-radius: 8px;
 }
-
+.button-container{
+  display: flex;
+}
 .dark-buttun{
   padding: 12px 48px;
   background-color: #071e2e;
@@ -131,14 +144,11 @@ div .logo:hover{
   padding: 12px 48px;
   color: white;
 }
-.footer{
-
-}
 .findme{
   color: #03afed;
-}
-@media only screen and (max-width: 750px) {
-.main-container{
+}/* 
+@media only screen and (max-width: 650px) {
+.page-container{
   flex-direction: column;
 }
 .main-image-container{
@@ -157,4 +167,4 @@ div .logo:hover{
 .page-container{
   padding: 0 3%;
 }
-}
+} */

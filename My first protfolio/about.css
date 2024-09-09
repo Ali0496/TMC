@@ -12,7 +12,34 @@ body{
     background-color: var(--main-color);
  
 }
-
+.page-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.nav-bar{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 32px 0;
+  border: 2px solid;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  list-style: none;
+  } 
+  a {
+    text-decoration: none;
+    z-index: 99;
+    border-bottom: 2px solid transparent;
+    color: white;
+    transition: all 0.5s linear;
+    padding-bottom: 2px;
+  
+  }
   .primary-button{
     display: flex;
     width: 160px;

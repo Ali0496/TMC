@@ -1,13 +1,52 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: gray;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+background-color: rgb(134, 133, 133);
 }
-.container{
+.grid{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
-    padding: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+} 
+.header p{
+    grid-column: span 6;
+    font-size: 20px;
+        
+      
 }
-.container div{
-    border: 2px solid;
-    text-align: center;
+header nav{
+    grid-column-start: 8;
+    grid-column-end: 13;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+   font-size: 18px;
+   justify-content: end;
+     
+}
+        
+nav a:hover{
+      padding: 5px;
+      color: rgb(23, 8, 8);
+      border-bottom: 2px solid rgb(23, 8, 8) ;
+      }
+header nav a{
+    border-bottom: 2px solid transparent;
+      color: white;
+      transition: all 0.5s linear;
+      padding-bottom: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+main img{
+    width: 400px;
+    height: 600px;
+    justify-self: end;
 }
