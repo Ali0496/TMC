@@ -17,36 +17,15 @@ background-color: rgb(134, 133, 133);
         
       
 }
-header nav{
-    grid-column-start: 8;
-    grid-column-end: 13;
+.container div{
+    border: 2px solid;
+    text-align: center;
     
+}
+.first{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 32px;
+
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-   font-size: 18px;
-   justify-content: end;
-     
-}
-        
-nav a:hover{
-      padding: 5px;
-      color: rgb(23, 8, 8);
-      border-bottom: 2px solid rgb(23, 8, 8) ;
-      }
-header nav a{
-    border-bottom: 2px solid transparent;
-      color: white;
-      transition: all 0.5s linear;
-      padding-bottom: 2px;
-    text-decoration: none;
-    margin-left: 10px;
-    
-}
-main img{
-    width: 400px;
-    height: 600px;
-    justify-self: end;
-}

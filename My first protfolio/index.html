@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Protfolio</title>
-    <link rel="stylesheet" href="index.css" type="text/css">
-    <link rel="stylesheet" href="">
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./about.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+  <body>
     <div class="page-container">
-        <div class="header-container">
-            <div class="logo">.Ali</div>
-               <nav> 
-                     <ul>
-                         <li><a href="index.html">Home</a></li>
-                         <li><a href="about.html">About</a></li>
-                         <li><a href="protfolio.html">Protfolio</a></li>
-                         <li><a href="contact.html">Contact</a></li>
-                     </ul> 
-               </nav>
-        </div>
-        <div class="main-image-container"> 
-                <img src="/Images/freepik-export-202406251033209f3Y 1.png" alt="My Photo"  width="300">
-        </div>
-        <div class="main-container">
-            <div class="main-text-container">
-                <p class="main-text-name">Hi, I'm Mukhammadali Turdiboev</p>
-                <p class="frontend-developer-text">Frontend Developer</p>
-                <p class="text-about-me">Hi, I'm Mukhammadali Turdiboev, a web designer and developer 
-                   with a passion for crafting visually stunning and highly functional 
-                   websites. With a keen eye for detail and a strong 
-                   grasp of front-end technologies.</p>
-                <div class="button-container"><button class="light-button" type="button">Hire Me</button>
-                    <button class="dark-buttun" type="button"> Lets Talk</button>
-                </div>
+      <div class="page-layuot">
+        <nav>    
+           <div>logo</div>
+          <div id="burger" class="burger">
+            <img src="/Images/burger.svg"/>
+          </div>
+     
+          <ul class="nav-items">
+            <li>
+              <input type="checkbox" id="mod-theme" />
+              <label for="mod-theme">
+                <img src="/Images/sun.svg" id="sun" />
+                <img src="/Images/moon.svg" id="moon" />
+              </label>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html"> Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="cv-btn">
+              <a href="./Animation in CSS.pdf">Download CV</a>
+            </li>
+          </ul>
+          <div id="close-svg">
+            <img src="/Images/close.svg" alt="">
+          </div>
+        </nav>
+
+        <div class="main">
+          <div class="text-main">
+            <p class="content-title">Hi I am Mukhammadali Turdiboev</p>
+            <p class="content-role">Front End Developer</p>
+            <p>
+              As a web developer I build dynamic, responsive websites using
+              HTML, CSS, and JavaScript. Skilled in modern frameworks like React
+              and Angular, I focus on creating intuitive user interfaces and
+              optimizing performance. Passionate about leveraging the latest
+              technologies I deliver user-centered solutions with clean,
+              efficient code.
+            </p>
+
+            <div class="btn-container">
+              <button class="btn light-btn">Hire Me</button>
+              <button class="btn dark-btn">Let's Talk</button>
             </div>
+          </div>
+          <div class="image-main">
+            <img src=".jpeg" width="250" height="250" />
+          </div>
         </div>
-        <div class="footer"> 
-            <div class="footer-text-icons">
-               <p class="findme">Find Me On</p>
-               <img src="/Images/facebook.svg" alt="facebook icon" width="24">
-               <img src="/Images/twitter.svg" alt="twitter icon" width="24">
-               <img src="/Images/dribble.svg" alt="Dribble icon" width="24">
-               <img src="/Images/behance.svg" alt="behance icon" width="24">
-               <img src="/Images/github.svg" alt="github icon" width="24">
-           </div>
-        </div>
+        <footer>
+            <div class="find-me">Find Me On</div>
+            <img src="/Images/twitter.svg" alt="twitter icon" width="24">
+            <img src="/Images/dribble.svg" alt="Dribble icon" width="24">
+            <img src="/Images/behance.svg" alt="behance icon" width="24">
+            <img src="/Images/github.svg" alt="github icon" width="24">
+        </footer>
+      </div>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
