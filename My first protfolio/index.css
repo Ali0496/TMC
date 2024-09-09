@@ -190,16 +190,25 @@ label img {
   line-height: 52px;
 }
 
-@media only screen and (max-width: 868px){
+@media only screen and (max-width: 1200px){
   .burger img{
     display: block;
   }
+  body{ margin: 0;
+  padding: 0;
+  }
+  .page-container{
+    margin: 5px;
+    padding: 5px;
+  }
+
   .nav-items{
   display: none;
   position: relative;
   width: 100%;
   justify-content: center;
   text-align: center;
+  
 }
 nav{
   height: 100%;
@@ -215,9 +224,12 @@ nav{
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 810px) {
   .main {
     flex-direction: column;
+  }
+  .content-title{
+    font-size: 50px;
   }
   .image-main {
     order: 1;
