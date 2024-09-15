@@ -150,6 +150,7 @@ label::after {
   position: absolute;
   background-color: orange;
   border-radius: 20px;
+  left: 3px;
 }
 #mod-theme:checked + label {
   background-color: rgb(48, 45, 45);
@@ -224,7 +225,7 @@ nav{
 }
 
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 712px) {
   .main {
     flex-direction: column;
   }
@@ -240,4 +241,33 @@ nav{
   .page-container {
     padding: 0 3%;
   }
+.btn-container{
+  margin: 40px 0;
+}
+.footer{
+  margin-bottom: 20px;
+}
+}
+@media only screen and (max-width: 312px){
+  .main {
+    flex-direction: column;
+  }
+  .content-title{
+    font-size: 50px;
+  }
+  .image-main {
+    order: 1;
+  }
+  .text-main {
+    order: 2;
+  }
+  .page-container {
+    padding: 0 3%;
+  }
+.btn-container{
+  margin: 40px 0;
+}
+.footer{
+  margin-bottom: 20px;
+}
 }
